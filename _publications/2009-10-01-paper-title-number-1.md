@@ -1,7 +1,7 @@
 ---
-title: "Journals"
+title: "Conferences"
 collection: publications
-permalink: 
+permalink: https://ieeexplore.ieee.org/abstract/document/9118079
 excerpt: ''
 date: 
 venue: ''
