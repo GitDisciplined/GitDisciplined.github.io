@@ -1,7 +1,7 @@
 ---
 permalink: /
 title: "Bin"
-excerpt: "I am technological enthusiast who work in the domain of VLSI and semiconductor devices"
+excerpt: "about me"
 author_profile: true
 redirect_from: 
   - /about/
@@ -9,7 +9,7 @@ redirect_from:
 ---
 
 
-
+I am technological enthusiast who work in the domain of VLSI and semiconductor devices
 
 
 
