@@ -1,7 +1,7 @@
 ---
 permalink: /
-title: "academicpages is a ready-to-fork GitHub Pages template for academic personal websites"
-excerpt: "About me"
+title: "Bin"
+excerpt: "I am technological enthusiast who work in the domain of VLSI and semiconductor devices"
 author_profile: true
 redirect_from: 
   - /about/
@@ -12,7 +12,7 @@ redirect_from:
 
 
 
-I am technological enthusiast who work in the domain of VLSI and semiconductor devices
+
 
 Interests
 ======
