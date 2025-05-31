@@ -3,7 +3,7 @@ layout: default
 title: "Integral theoroms"
 ---
 
-## **Sobolev Space**
+## Sobolev Space
 
 
 In mathematical analysis, Agmon's inequalities, named after Shmuel Agmon,[1] consist of two closely related interpolation inequalities between the Lebesgue space 
