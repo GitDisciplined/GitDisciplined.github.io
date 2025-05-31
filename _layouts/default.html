@@ -4,21 +4,35 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>{{ page.title }} - {{ site.title }}</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet" />
+
+  <!-- Your CSS -->
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}" />
-  <script type="text/javascript" async
-    src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+
+  <!-- MathJax Config -->
+  <script>
+    window.MathJax = {
+      tex: {
+        inlineMath: [['$', '$'], ['\\(', '\\)']],
+        displayMath: [['$$', '$$'], ['\\[', '\\]']]
+      }
+    };
   </script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
 </head>
+
 <body>
-  {% include sidebar.html %} <!-- Include sidebar -->
+  <div class="layout">
+    <aside class="sidebar">
+      {% include sidebar.html %}
+    </aside>
 
-  <!-- ✅ WRAP CONTENT IN A DIV -->
-  <div class="main-content">
-    <h1>Welcome to My Math Blog</h1>
-    <p>Here is some content related to Real Analysis...</p>
-    
+    <main class="content">
+      {{ content }}
+    </main>
   </div>
-
 </body>
 </html>
 
