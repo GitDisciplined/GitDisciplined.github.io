@@ -4,7 +4,7 @@ title: "Real Analysis"
 permalink: /real-analysis/
 ---
 
-<h2>Real Analysis</h2>
+
 
 <ul>
   {% for post in site.posts %}
