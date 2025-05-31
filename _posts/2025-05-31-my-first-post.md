@@ -5,7 +5,7 @@ title: "My First Post"
 
 Welcome to my math blog!
 
-Here’s some inline math: $$a^2 + b^2 = c^2$$
+Here’s some inline math: $a^2 + b^2 = c^2$
 
 And here’s display math:
 
