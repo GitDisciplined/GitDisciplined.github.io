@@ -46,3 +46,37 @@ body {
   text-align: center;
 }
 
+
+
+nav ul {
+  list-style-type: none;
+}
+
+nav li {
+  display: inline-block;
+  position: relative;
+}
+
+nav a {
+  text-decoration: none;
+  padding: 10px;
+  display: block;
+}
+
+nav .dropdown {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 160px;
+  z-index: 1;
+}
+
+nav li:hover .dropdown {
+  display: block;
+}
+
+nav .dropdown li {
+  display: block;
+}
+
+
