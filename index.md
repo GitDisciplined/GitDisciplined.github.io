@@ -6,6 +6,20 @@
 
 
 
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   <div class="quote">
     <p>“Pure mathematics is, in its way, the poetry of logical ideas.”</p>
     <span>– Albert Einstein</span>
