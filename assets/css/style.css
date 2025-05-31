@@ -80,12 +80,24 @@
   background-color: #2c3e50; /* Slightly darker blue for submenu hover */
 }
 
+.main-content {
+  margin-left: 250px;  /* Make sure it doesn't overlap the sidebar */
+  padding: 20px;       /* Add padding for spacing */
+  transition: margin-left 0.3s ease; /* Smooth transition if sidebar is toggled */
+}
+
+
+
 /* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   .sidebar {
     width: 100%;  /* Full width on mobile */
     position: relative;
     transform: translateX(-100%);
+  }
+
+  sidebar.show ~ .main-content {
+    margin-left: 100%; /* Push the content when sidebar is open */
   }
 
   .sidebar.show {
