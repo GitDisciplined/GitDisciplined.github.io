@@ -2,6 +2,7 @@ title: "My Math Blog"
 description: "Rigorous math writing and daily posts"
 baseurl: "" # leave empty for root site
 url: "https://GitDisciplined.github.io"
+paginate: 5 # Optional: controls number of posts per page
 
 theme: jekyll-theme-cayman # a nice-looking theme with sidebar support
 
