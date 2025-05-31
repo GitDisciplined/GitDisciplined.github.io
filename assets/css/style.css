@@ -1,8 +1,8 @@
 /* === Sidebar Styles === */
 .sidebar {
-  width: 200px;
-  height: 100vh;
-  position: fixed;
+  width: 250px;                    /* Increased width for readability */
+  height: 100vh;                   /* Full screen height */
+  position: fixed;                 /* Sidebar stays fixed on the left */
   top: 0;
   left: 0;
   background-color: #2c3e50;
@@ -13,59 +13,64 @@
 }
 
 .sidebar h2 {
-  font-size: 1.5em;
+  font-size: 1.8em;
   text-align: center;
   margin-bottom: 30px;
+  color: #ecf0f1;
 }
 
-/* Sidebar list */
+/* Sidebar List */
 .sidebar ul {
   list-style-type: none;
   padding: 0;
 }
 
 .sidebar ul li {
-  margin-bottom: 10px;
+  margin-bottom: 15px;
 }
 
-/* Top-level links */
+/* Links in Sidebar */
 .sidebar a {
   color: #ecf0f1;
   text-decoration: none;
   display: block;
-  padding: 8px 12px;
-  border-radius: 4px;
+  padding: 10px;
+  border-radius: 5px;
   transition: background-color 0.3s ease;
 }
 
 .sidebar a:hover {
-  background-color: #34495e;
+  background-color: #34495e; /* Hover effect */
 }
 
-/* === Dropdown Styling === */
+/* === Pure Math Dropdown === */
 .has-dropdown > a {
   font-weight: bold;
   cursor: pointer;
 }
 
+/* Hidden by default */
 .dropdown {
   display: none;
-  padding-left: 15px;
-  margin-top: 5px;
+  list-style: none;
+  padding-left: 20px;  /* Indentation for sub-items */
+  margin-top: 10px;
 }
 
+/* Show dropdown on hover */
 .has-dropdown:hover .dropdown {
   display: block;
 }
 
+/* Dropdown item styling */
 .dropdown li a {
-  font-size: 0.95em;
-  padding-left: 10px;
+  font-size: 1em;
+  padding-left: 15px;
 }
 
-/* === Main Content (optional if not already styled) === */
+/* === Main Content Area (Optional) === */
 .main-content {
-  margin-left: 220px;
+  margin-left: 270px; /* Move the content to the right to avoid overlap */
   padding: 40px 60px;
   background-color: #f7f9fc;
   min-height: 100vh;
