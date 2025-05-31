@@ -1,14 +1,14 @@
 /* Basic Styles for Sidebar */
 .sidebar {
   width: 250px;
-  background-color: #2c3e50; /* Dark blue background for the sidebar */
-  color: #fff;  /* White text for contrast */
+  background-color: #2c3e50;  /* Dark blue background */
+  color: #fff;  /* White text */
   padding: 20px;
   height: 100vh;  /* Full height of the page */
   position: fixed;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease; /* Smooth transition for mobile view */
+  transition: transform 0.3s ease;
 }
 
 .sidebar h2 {
@@ -16,6 +16,7 @@
   font-size: 2em;
   margin-bottom: 20px;
   color: #ecf0f1; /* Light color for the title */
+  text-align: center;  /* Center the title */
 }
 
 .sidebar ul {
@@ -24,21 +25,26 @@
 }
 
 .sidebar li {
-  margin: 15px 0;
+  margin: 15px 0;  /* Space between items */
 }
 
 .nav-link {
-  color: #ecf0f1;  /* Light gray text */
+  color: #ecf0f1;  /* Light text color */
   text-decoration: none;
-  font-size: 1.1em;
+  font-size: 1.2em;  /* Adjust font size for better readability */
+  display: block;
+  padding: 10px;
+  text-align: center;  /* Center-align the text */
+  border-radius: 5px;  /* Rounded corners for a modern look */
+  transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .nav-link:hover {
-  color: #3498db; /* Blue color on hover */
-  text-decoration: underline; /* Underline on hover for emphasis */
+  background-color: #3498db;  /* Blue background on hover */
+  color: #fff;  /* White text on hover */
 }
 
-/* Pure Math Dropdown */
+/* Pure Math Dropdown Styling */
 .dropdown {
   position: relative;
 }
@@ -48,19 +54,21 @@
   position: absolute;
   top: 100%;
   left: 0;
-  background-color: #34495e; /* Darker background for dropdown */
+  background-color: #34495e;  /* Darker background for the dropdown */
   width: 100%;
   list-style-type: none;
-  margin: 0;
   padding: 10px 0;
+  margin: 0;
+  border-radius: 5px;
 }
 
 .dropdown-menu li {
-  padding: 8px 20px;
+  padding: 10px;
+  text-align: center;
 }
 
 .dropdown:hover .dropdown-menu {
-  display: block; /* Show dropdown when hovering over Pure Math */
+  display: block;  /* Show dropdown on hover */
 }
 
 .dropdown-menu .nav-link {
@@ -69,27 +77,28 @@
 
 .dropdown-menu .nav-link:hover {
   color: #3498db;
+  background-color: #2c3e50; /* Slightly darker blue for submenu hover */
 }
 
-/* Responsive Design */
+/* Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   .sidebar {
-    width: 100%;  /* Full-width sidebar on mobile */
+    width: 100%;  /* Full width on mobile */
     position: relative;
-    transform: translateX(-100%); /* Initially hidden */
+    transform: translateX(-100%);
   }
-  
+
   .sidebar.show {
     transform: translateX(0); /* Show sidebar on mobile */
   }
 
   .sidebar ul {
-    text-align: center;
+    text-align: center;  /* Center-align items in mobile view */
   }
 
   .dropdown-menu {
     left: 50%;
-    transform: translateX(-50%); /* Center the dropdown */
+    transform: translateX(-50%);  /* Center the dropdown on mobile */
   }
 }
 
