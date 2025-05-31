@@ -1,6 +1,6 @@
 /* Sidebar */
 .sidebar {
-  width: 200px;                      /* ⬅️ Reduced width */
+  width: 200px;
   background-color: #2c3e50;
   color: #fff;
   padding: 20px;
@@ -8,28 +8,72 @@
   position: fixed;
   top: 0;
   left: 0;
-  transition: transform 0.3s ease;
+  overflow-y: auto;
 }
 
+/* Sidebar Title */
 .sidebar h2 {
-  font-family: 'Merriweather', serif;
   font-size: 1.8em;
   margin-bottom: 20px;
-  color: #ecf0f1;
   text-align: center;
+  color: #ecf0f1;
 }
 
-/* Main Content */
+/* Sidebar Links */
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+}
+
+.sidebar li {
+  margin: 15px 0;
+}
+
+.sidebar a {
+  color: #ecf0f1;
+  text-decoration: none;
+  display: block;
+  padding: 8px 10px;
+  border-radius: 4px;
+  transition: background 0.3s ease;
+}
+
+.sidebar a:hover {
+  background-color: #3498db;
+}
+
+/* ✅ Main Content */
 .main-content {
-  margin-left: 230px;               /* ⬅️ Push content more to the right */
-  padding: 30px 20px;
-  transition: margin-left 0.3s ease;
+  margin-left: 220px;                 /* ensures space for sidebar */
+  padding: 40px 60px;                 /* spacing inside content */
+  background-color: #f7f9fc;          /* light, professional background */
+  min-height: 100vh;
+  color: #333;
+  font-family: "Georgia", serif;
+  max-width: 900px;                   /* set a readable width */
+  margin-right: auto;
+  margin-left: 220px;                 /* aligns to the right of sidebar */
+  box-sizing: border-box;
 }
 
-/* Responsive (Mobile) */
+/* Headings and Paragraphs */
+.main-content h1 {
+  font-size: 2.5em;
+  margin-bottom: 20px;
+  color: #2c3e50;
+}
+
+.main-content p {
+  font-size: 1.2em;
+  line-height: 1.7;
+}
+
+/* 📱 Mobile Responsiveness */
 @media screen and (max-width: 768px) {
   .sidebar {
+    position: absolute;
     transform: translateX(-100%);
+    transition: transform 0.3s ease;
   }
 
   .sidebar.show {
@@ -38,11 +82,8 @@
 
   .main-content {
     margin-left: 0;
-  }
-
-  .sidebar.show ~ .main-content {
-    margin-left: 100%;
+    padding: 30px 20px;
+    max-width: 100%;
   }
 }
-
 
