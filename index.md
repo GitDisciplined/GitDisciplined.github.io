@@ -14,4 +14,3 @@ You'll find topics on:
   
 
 
-Enjoy the journey!
