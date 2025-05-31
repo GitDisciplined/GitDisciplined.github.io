@@ -1,14 +1,16 @@
 ---
 layout: default
-title: Home
+title: "Welcome"
 ---
 
-<h1>Welcome to My Math Blog</h1>
+# 📖 Welcome to My Math splash
 
-<ul>
-  {% for post in site.posts %}
-  <li>
-    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
-  </li>
-  {% endfor %}
-</ul>
+This blog is a personal attempt to explore the **art and beauty of mathematics**.
+
+You'll find topics on:
+
+- Real Analysis
+- Algebra
+- Geometry
+
+Enjoy the journey!
