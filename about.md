@@ -12,4 +12,4 @@ I’m a mathematics enthusiast writing daily about topics like:
 - Deep learning math
 - Proof techniques
 
-This blog is my personal archive of deep thinking.
+This blog is my attempt to explore math moren depth.
