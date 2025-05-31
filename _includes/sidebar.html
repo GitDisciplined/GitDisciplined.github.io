@@ -1,7 +1,7 @@
 <nav class="sidebar">
   <h2>{{ site.title }}</h2>
   <ul>
-    <!-- Home link -->
+    <!-- Home Link -->
     <li><a href="{{ '/' | relative_url }}">Home</a></li>
 
     <!-- Pure Math Dropdown -->
@@ -14,8 +14,14 @@
       </ul>
     </li>
 
-    <!-- Applied Math -->
-    <li><a href="/applied-math">Applied Math</a></li>
+    <!-- Applied Math Dropdown -->
+    <li class="has-dropdown">
+      <a href="#">Applied Math ▾</a>
+      <ul class="dropdown">
+        <li><a href="/calculus">Calculus</a></li>
+        <li><a href="/differential-equations">Differential Equations</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
 
