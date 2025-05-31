@@ -3,13 +3,12 @@ layout: default
 title: Home
 ---
 
-# Welcome to My Math Blog
+<h1>Welcome to My Math Blog</h1>
 
-This is a blog for rigorous math content and daily updates.
-
-Use the sidebar to navigate.
-
-<section id="pure-math">
-  <h2>Pure Mathematics</h2>
-  <p>Explore the fundamental areas of mathematics like Real Analysis, Algebra, and more!</p>
-</section>
+<ul>
+  {% for post in site.posts %}
+  <li>
+    <a href="{{ post.url }}">{{ post.title }}</a> - {{ post.date | date: "%B %d, %Y" }}
+  </li>
+  {% endfor %}
+</ul>
