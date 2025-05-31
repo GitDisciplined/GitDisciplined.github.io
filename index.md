@@ -1,7 +1,4 @@
 
-layout: default
-title: "Home"
----
 
 <div class="home-hero">
   <h1>Welcome to <span class="brand">My Math Diary</span></h1>
