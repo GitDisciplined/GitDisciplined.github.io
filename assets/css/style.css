@@ -106,5 +106,26 @@
   color: #ecf0f1;
 }
 
+  /* Dropdown menu */
+.has-dropdown > .dropdown {
+  display: none;
+  list-style: none;
+  margin-top: 8px;
+  padding-left: 15px;
+}
+
+.has-dropdown:hover > .dropdown {
+  display: block;
+}
+
+/* Optional: style submenu links */
+.sidebar .dropdown li a {
+  font-size: 0.95em;
+  padding-left: 10px;
+  display: block;
+  color: #ecf0f1;
+}
+
+
 }
 
