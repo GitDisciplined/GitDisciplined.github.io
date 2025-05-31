@@ -1,96 +1,112 @@
-/* Sidebar Styles */
+/* Reset some default styles for consistency */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Georgia', serif;
+  background-color: #f4f4f9;
+  color: #333;
+  line-height: 1.6;
+  font-size: 18px;
+  padding: 20px;
+}
+
+h1, h2, h3, h4 {
+  font-family: 'Arial', sans-serif;
+  font-weight: bold;
+}
+
+a {
+  text-decoration: none;
+  color: #3498db;
+}
+
+a:hover {
+  color: #2980b9;
+}
+
 .sidebar {
-  width: 250px;  /* Sidebar width */
-  height: 100vh;  /* Full screen height */
-  position: fixed;  /* Sidebar stays fixed on the left */
+  background-color: #2c3e50;
+  color: white;
+  padding: 15px;
+  width: 250px;
+  position: fixed;
+  height: 100%;
   top: 0;
   left: 0;
-  background-color: #2c3e50;  /* Dark sidebar color */
-  color: #ecf0f1;  /* Text color */
-  padding: 20px;
-  box-shadow: 2px 0 5px rgba(0, 0, 0, 0.1);
-  overflow-y: auto;
 }
 
-/* Title in Sidebar */
 .sidebar h2 {
-  font-size: 1.8em;
-  text-align: center;
+  font-family: 'Arial', sans-serif;
   margin-bottom: 30px;
-  color: #ecf0f1;
 }
 
-/* List styling for sidebar items */
 .sidebar ul {
   list-style-type: none;
-  padding: 0;
 }
 
 .sidebar ul li {
-  margin-bottom: 15px;  /* Add space between list items */
+  margin: 10px 0;
 }
 
-/* Sidebar links */
-.sidebar a {
-  color: #ecf0f1;
-  text-decoration: none;
-  display: block;
-  padding: 10px;
-  border-radius: 5px;
-  transition: background-color 0.3s ease;
+.sidebar ul li a {
+  color: white;
+  font-size: 18px;
 }
 
-/* Sidebar links hover effect */
-.sidebar a:hover {
-  background-color: #34495e;
+.sidebar ul li a:hover {
+  color: #f39c12;
 }
 
-/* Pure Math and Applied Math dropdown menus */
-.has-dropdown > a {
-  font-weight: bold;
-  cursor: pointer;
-  padding: 10px;
-  background-color: #34495e;  /* Background for the parent link */
-  border-radius: 5px;
-  margin-bottom: 10px;
+.content {
+  margin-left: 270px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* Dropdown menu styling (hidden by default) */
-.dropdown {
-  display: none;
-  list-style: none;
-  padding-left: 20px;  /* Indentation for sub-items */
-  margin-top: 10px;
+.content h1 {
+  text-align: center;
+  color: #2c3e50;
 }
 
-/* Display the dropdown on hover */
-.has-dropdown:hover .dropdown {
-  display: block;
+.content h2 {
+  margin-top: 30px;
+  color: #2980b9;
 }
 
-/* Dropdown item styling */
-.dropdown li a {
-  font-size: 1em;
-  padding-left: 15px;
-  background-color: #5d6d7e;  /* Lighter background for sub-menu items */
+.content p {
+  font-size: 18px;
+  margin: 20px 0;
+}
+
+.content code {
+  background-color: #ecf0f1;
+  padding: 5px;
   border-radius: 5px;
 }
 
-/* Dropdown item hover effect */
-.dropdown li a:hover {
-  background-color: #7f8c8d;
+.content pre {
+  background-color: #ecf0f1;
+  padding: 15px;
+  border-radius: 5px;
+  white-space: pre-wrap;
+  word-wrap: break-word;
 }
 
-/* Main Content Area */
-.main-content {
-  margin-left: 270px;  /* Push content right to avoid overlap with sidebar */
-  padding: 40px 60px;
-  background-color: #f7f9fc;
-  min-height: 100vh;
-  color: #333;
-  font-family: "Georgia", serif;
-  max-width: 900px;
-  margin-right: auto;
-  box-sizing: border-box;
+/* Add some responsiveness */
+@media (max-width: 768px) {
+  .sidebar {
+    width: 100%;
+    position: relative;
+  }
+
+  .content {
+    margin-left: 0;
+  }
 }
 
