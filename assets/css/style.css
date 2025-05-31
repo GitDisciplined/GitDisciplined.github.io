@@ -44,73 +44,60 @@
   color: #fff;  /* White text on hover */
 }
 
-/* Pure Math Dropdown Styling */
-.dropdown {
-  position: relative;
-}
-
-.dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 100%;
-  left: 0;
-  background-color: #34495e;  /* Darker background for the dropdown */
-  width: 100%;
-  list-style-type: none;
-  padding: 10px 0;
-  margin: 0;
-  border-radius: 5px;
-}
-
-.dropdown-menu li {
-  padding: 10px;
-  text-align: center;
-}
-
-.dropdown:hover .dropdown-menu {
-  display: block;  /* Show dropdown on hover */
-}
-
-.dropdown-menu .nav-link {
-  color: #ecf0f1;
-}
-
-.dropdown-menu .nav-link:hover {
-  color: #3498db;
-  background-color: #2c3e50; /* Slightly darker blue for submenu hover */
-}
-
+/* Main Content Area */
 .main-content {
-  margin-left: 250px;  /* Make sure it doesn't overlap the sidebar */
+  margin-left: 250px;  /* Ensure the content doesn't overlap the sidebar */
   padding: 20px;       /* Add padding for spacing */
   transition: margin-left 0.3s ease; /* Smooth transition if sidebar is toggled */
 }
 
+h1 {
+  font-size: 2.5em; /* Larger title for better readability */
+  color: #333;  /* Dark color for title */
+}
 
+p {
+  font-size: 1.2em; /* Comfortable font size for paragraphs */
+  color: #555; /* Lighter color for text */
+}
 
-/* Mobile Responsiveness */
+/* Mobile View */
 @media screen and (max-width: 768px) {
   .sidebar {
-    width: 100%;  /* Full width on mobile */
-    position: relative;
-    transform: translateX(-100%);
-  }
-
-  sidebar.show ~ .main-content {
-    margin-left: 100%; /* Push the content when sidebar is open */
+    transform: translateX(-100%);  /* Initially hide the sidebar */
   }
 
   .sidebar.show {
-    transform: translateX(0); /* Show sidebar on mobile */
+    transform: translateX(0);  /* Show sidebar when toggled */
   }
 
-  .sidebar ul {
-    text-align: center;  /* Center-align items in mobile view */
+  .main-content {
+    margin-left: 0;  /* No left margin on small screens */
   }
 
-  .dropdown-menu {
-    left: 50%;
-    transform: translateX(-50%);  /* Center the dropdown on mobile */
+  .sidebar.show ~ .main-content {
+    margin-left: 100%; /* Push the content when sidebar is open */
   }
 }
+
+/* Optional: Styling for the Toggle Button on Mobile */
+.toggle-btn {
+  display: none;  /* Hide the toggle button on larger screens */
+}
+
+@media screen and (max-width: 768px) {
+  .toggle-btn {
+    display: block;  /* Show the toggle button on mobile */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.5em;
+    cursor: pointer;
+  }
+}
+
 
