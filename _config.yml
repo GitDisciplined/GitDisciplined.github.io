@@ -1,5 +1,5 @@
-title: "My Math Blog"
-description: "Rigorous math writing and daily posts"
+title: "My Math Diary"
+description: "An attempt to learn the art and beauty of mathematics"
 baseurl: "" # leave empty for root site
 url: "https://GitDisciplined.github.io"
 paginate: 5 # Optional: controls number of posts per page
