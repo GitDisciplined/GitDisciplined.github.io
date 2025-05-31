@@ -2,7 +2,7 @@
 
 <div class="home-hero">
   <h1>Welcome to <span class="brand">My Math Diary</span></h1>
-  <p class="tagline">This is  my attempt to learn the <strong>art and beauty</strong> of mathematics. I hope I will enjoy the journey to the fullest</p>
+  <p class="tagline">This is  my attempt to learn the <strong>art and beauty</strong> of mathematics. I hope I will enjoy this journey to the fullest.</p>
 
 
 
