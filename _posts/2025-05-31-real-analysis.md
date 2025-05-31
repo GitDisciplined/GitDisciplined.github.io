@@ -4,6 +4,7 @@ title: "Limits and Continuity"
 categories: [real-analysis]
 ---
 
+## Dummy data
 Let \( f : D \to \mathbb{R} \), and let \( a \in \mathbb{R} \) be a limit point of the domain \( D \subseteq \mathbb{R} \).  
 We say that the **limit of \( f(x) \) as \( x \to a \) is \( L \)**, and write
 
