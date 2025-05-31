@@ -85,5 +85,26 @@
     padding: 30px 20px;
     max-width: 100%;
   }
+
+
+  /* Dropdown structure */
+.has-dropdown > .dropdown {
+  display: none;
+  list-style-type: none;
+  padding-left: 15px;
+  margin-top: 10px;
+}
+
+.has-dropdown:hover > .dropdown {
+  display: block;
+}
+
+/* Optional: Make submenu links cleaner */
+.sidebar .dropdown li a {
+  font-size: 0.95em;
+  padding-left: 15px;
+  color: #ecf0f1;
+}
+
 }
 
