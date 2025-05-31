@@ -1,18 +1,19 @@
 <nav class="sidebar">
   <h2>{{ site.title }}</h2>
   <ul>
-    <li><a href="{{ '/' | relative_url }}">Home</a></li>
+    <li><a href="{{ '/' | relative_url }}" class="nav-link">Home</a></li>
+    
     <!-- Pure Math Dropdown -->
-    <li>
-      <a href="#">Pure Math</a>
-      <ul class="dropdown">
-        <li><a href="/real-analysis">Real Analysis</a></li>
-        <li><a href="/abstract-algebra">Abstract Algebra</a></li>
-        <li><a href="/topology">Topology</a></li>
+    <li class="dropdown">
+      <a href="#" class="nav-link">Pure Math</a>
+      <ul class="dropdown-menu">
+        <li><a href="/real-analysis" class="nav-link">Real Analysis</a></li>
+        <li><a href="/abstract-algebra" class="nav-link">Abstract Algebra</a></li>
+        <li><a href="/topology" class="nav-link">Topology</a></li>
       </ul>
     </li>
-    <li><a href="/applied-math">Applied Math</a></li>
     
+    <li><a href="/applied-math" class="nav-link">Applied Math</a></li>
   </ul>
 </nav>
 
